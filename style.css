@@ -1,0 +1,374 @@
+body {
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: white !important;
+}
+
+.text-center {
+  font-size: 1.5rem;
+}
+
+#three-Text {
+  display: none;
+  background-color: yellow;
+}
+
+.hero-section {
+  position: relative;
+}
+#hero-sectionbg {
+  position: sticky;
+  top: 0;
+  background-image: url("assets/img/bgimage.jpg");
+  background-size: cover;
+  /* top: -20rem; */
+}
+.hero-title {
+  color: #fff;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: "Red Hat Display";
+  transform: translateX(-50%);
+
+  opacity: 0;
+  animation: sideAndFade 2s ease-in-out forwards;
+}
+
+@keyframes sideAndFade {
+  0% {
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.hero-subtitle {
+  color: #fff;
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  font-family: "Red Hat Display";
+  transform: translateX(-50%);
+}
+
+.hero-container-text {
+  color: #fff;
+  position: absolute;
+  top: 12%;
+  font-size: 1.6rem;
+  width: 50%;
+  /* background-color: black; */
+  transform: translateX(50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Red Hat Display";
+}
+
+.hero-text {
+  cursor: pointer;
+  background-color: #2a0b10;
+  padding: 1.2rem 2.8rem;
+  border-radius: 0.4rem;
+  width: 25%;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+
+.hero-text:hover {
+  background-color: orange;
+  transform: scale(1.05);
+}
+
+.hero-text-2 {
+  top: 13.5%;
+}
+.float-ships {
+  position: relative;
+}
+.hero-img1 {
+  position: absolute;
+  z-index: 100;
+  top: 100px;
+  left: 10rem;
+}
+.hero-img1 > img {
+  opacity: 0.8;
+  width: 40%;
+  animation: float 3s ease-in-out infinite;
+}
+.hero-img2 {
+  position: absolute;
+  z-index: 100;
+  /* bottom: 100px; */
+  top: 45rem;
+  left: 5rem;
+}
+.hero-img2 > img {
+  opacity: 0.8;
+  width: 10%;
+  animation: float 3s ease-in-out infinite;
+}
+.hero-img3 {
+  position: absolute;
+  z-index: 100;
+  top: 100px;
+  right: 0;
+}
+.hero-img3 > img {
+  opacity: 0.8;
+  width: 30%;
+  animation: float 3s ease-in-out infinite;
+}
+
+.hero-img4 {
+  position: absolute;
+  z-index: 100;
+  /* bottom: 100px; */
+  top: 45rem;
+  /* left: 80%; */
+  left: 85%;
+}
+.hero-img4 > img {
+  opacity: 0.8;
+  width: 40%;
+  animation: float 3s ease-in-out infinite;
+}
+
+.hero-img5 {
+  position: absolute;
+  z-index: 100;
+  top: 45%;
+  left: 20rem;
+}
+.hero-img5 > img {
+  opacity: 0.8;
+  width: 15%;
+  animation: float 3s ease-in-out infinite;
+}
+
+.hero-img6 {
+  position: absolute;
+  z-index: 100;
+  top: 40%;
+  left: 80%;
+}
+.hero-img6 > img {
+  opacity: 0.8;
+  width: 30%;
+  animation: float 3s ease-in-out infinite;
+}
+
+.flex-full {
+  flex: 1;
+}
+/* canvas {
+  position: sticky;
+} */
+.second-section {
+  margin-top: 80rem;
+}
+
+.ships-images {
+  position: relative;
+}
+.ships-images img {
+  width: 60%;
+}
+.card-border {
+  border: 2px solid orange;
+}
+
+.border-orange {
+  border-color: orange;
+}
+
+.after-scroll {
+  margin-top: -10rem;
+}
+
+.box-shadow {
+  border-radius: 10px;
+  box-shadow: -2px 4px 14px -3px rgba(129, 120, 120, 0.75);
+  -webkit-box-shadow: -2px 4px 14px -3px rgba(129, 120, 120, 0.75);
+  -moz-box-shadow: -2px 4px 14px -3px rgba(129, 120, 120, 0.75);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.img1,
+.img2,
+.img3 {
+  animation: float 3s ease-in-out infinite;
+}
+
+.img1 {
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.img2 {
+  position: relative;
+  top: -100px;
+  left: 300px;
+}
+.img3 {
+  position: relative;
+  top: -200px;
+  left: 100px;
+}
+
+.image-blur {
+  position: absolute;
+  width: 30%;
+  top: 0;
+  left: 0;
+  filter: blur(3px);
+}
+.image-blur2 {
+  position: absolute;
+  width: 25%;
+  bottom: 0;
+  right: 0;
+  filter: blur(3px);
+}
+.image-blur:hover {
+  filter: none; /* Remove blur on hover */
+}
+
+.image-blur2:hover {
+  filter: none; /* Remove blur on hover */
+}
+.bg-orange {
+  background-color: orange;
+}
+.text-orange {
+  color: orange;
+}
+.bg-orange {
+  --bs-bg-opacity: 1;
+  background-color: orange !important;
+}
+.top-10 {
+  top: 10% !important;
+}
+
+@keyframes scroll_1 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-0.6em);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(0.6em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-icon__wheel-outer {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0.6em;
+  height: 1em;
+  width: 0.4em;
+  margin-left: -0.2em;
+  border-radius: 0.4em;
+  overflow: hidden;
+}
+
+.scroll-icon__wheel-inner {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background: orange;
+  animation: scroll_1 2.75s ease-in-out infinite;
+}
+
+@keyframes scroll_2 {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(0.75em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+.scroll-icon__dot {
+  display: block;
+  position: absolute;
+  left: 50%;
+  background: orange;
+  height: 0.5em;
+  width: 0.5em;
+  top: 0.6em;
+  margin-left: -0.25em;
+  border-radius: 50%;
+  transform-origin: top center;
+  backface-visibility: hidden;
+  animation: scroll_2 2s ease-out infinite;
+}
+
+.scroll-icon {
+  display: block;
+  position: relative;
+  height: 3em;
+  width: 2em;
+  border: 0.25em solid orange;
+  border-radius: 1em;
+}
+
+.page-wrap {
+  display: flex;
+  height: 100vh;
+}
+
+.example {
+  position: absolute;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  bottom: 2rem;
+  right: 50%;
+}
